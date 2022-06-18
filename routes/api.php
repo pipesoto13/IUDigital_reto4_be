@@ -23,3 +23,6 @@ Route::get('/subjects/{id}', 'App\Http\Controllers\SubjectController@show');
 Route::post('/subjects', 'App\Http\Controllers\SubjectController@store');
 Route::put('/subjects/{id}', 'App\Http\Controllers\SubjectController@update');
 Route::delete('/subjects/{id}', 'App\Http\Controllers\SubjectController@destroy');
+
+Route::post('/register', 'App\Http\Controllers\ClientController@store');
+Route::get('/login', 'App\Http\Controllers\ClientController@index');
